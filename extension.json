@@ -1,0 +1,32 @@
+{
+    "identifier": "dinhquochan.phpcs",
+    "name": "phpcs",
+    "vendor": "Dinh Quoc Han",
+    "description": "PHP CodeSniffer for Nova.",
+    "version": "1.0",
+    "categories": ["issues"],
+    "main": "main.js",
+    "activationEvents": [
+        "onLanguage:php"
+    ],
+    "entitlements": {
+        "process": true,
+        "filesystem": "readwrite"
+    },
+    "config": [
+        {
+            "key": "dqh-phpcs.executable-path",
+            "title": "Executable path",
+            "description": "This setting controls the executable path for the phpcs. You may specify the absolute path or workspace relative path to the phpcs executable.",
+            "type": "string",
+            "default": "phpcs"
+        },
+        {
+            "key": "dqh-phpcs.standard",
+            "title": "Standard",
+            "description": "This setting controls the coding standard used by phpcs. You may specify the name, absolute path or workspace relative path of the coding standard to use.",
+            "type": "string",
+            "default": null
+        }
+    ]
+}
