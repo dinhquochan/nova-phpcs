@@ -11,8 +11,8 @@ class IssuesProvider {
         return new Promise(function(resolve) {
             const issues = [];
             
-            const execurePath = nova.config.get('dqh-phpcs.executable-path');
-            const standard = nova.config.get('dqh-phpcs.standard');
+            const execurePath = nova.config.get("dqh-phpcs.executable-path");
+            const standard = nova.config.get("dqh-phpcs.standard");
             const options = {
                 args: [
                     execurePath,
@@ -25,19 +25,13 @@ class IssuesProvider {
             const process = new Process("/usr/bin/env", options);
             
             process.onStdout(function(line) {
-                let phpcsResult = JSON.parse(line);
+                let output = JSON.parse(line);
     
-                if (phpcsResult) {
-                    for (let [path, cs] of Object.entries(phpcsResult.files)) {
+                if (output) {
+                    for (let [path, cs] of Object.entries(output.files)) {
                         cs.messages.forEach(function (message) {
                             let issue = new Issue();
-                            let collector = {
-                                message: message.message,
-                                severity:  message.type,
-                                line:  message.line,
-                                column:  message.column
-                            };
-    
+
                             issue.message = message.message;
                             issue.severity = message.type === "ERROR" ? IssueSeverity.Error : IssueSeverity.Warning;
                             issue.line = message.line;
