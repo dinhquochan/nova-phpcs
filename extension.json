@@ -3,7 +3,7 @@
     "name": "phpcs",
     "vendor": "Dinh Quoc Han",
     "description": "PHP CodeSniffer for Nova.",
-    "version": "1.0",
+    "version": "1.1",
 	"bugs": "https://github.com/dinhquochan/nova-phpcs/issues",
     "categories": ["issues"],
     "main": "main.js",
