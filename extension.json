@@ -3,16 +3,17 @@
     "name": "phpcs",
     "vendor": "Dinh Quoc Han",
     "description": "PHP CodeSniffer for Nova.",
-    "version": "1.0",
+    "version": "1.2",
+    "repository": "https://github.com/dinhquochan/nova-phpcs",
 	"bugs": "https://github.com/dinhquochan/nova-phpcs/issues",
     "categories": ["issues"],
-    "main": "main.js",
+    "main": "main.min.js",
     "activationEvents": [
         "onLanguage:php"
     ],
     "entitlements": {
         "process": true,
-        "filesystem": "readwrite"
+        "filesystem": "readonly"
     },
     "config": [
         {
