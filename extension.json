@@ -1,7 +1,7 @@
 {
     "identifier": "dinhquochan.phpcs",
     "name": "phpcs",
-    "vendor": "Dinh Quoc Han",
+    "organization": "Dinh Quoc Han",
     "description": "PHP CodeSniffer for Nova.",
     "version": "1.2",
     "repository": "https://github.com/dinhquochan/nova-phpcs",
