@@ -16,7 +16,7 @@ class IssuesProvider {
             const issues = [];
             
             const execurePath = nova.config.get('dqh-phpcs.executable-path');
-            const standard = nova.config.get('dqh-phpcs.standard');
+            const standard = nova.workspace.config.get('dqh-phpcs.standard') ? nova.workspace.config.get('dqh-phpcs.standard') : nova.config.get('dqh-phpcs.standard');
             const options = {
                 args: [
                     execurePath,
