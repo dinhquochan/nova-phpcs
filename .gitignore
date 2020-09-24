@@ -1,1 +1,6 @@
+/nova-phpcs.novaextension/LICENSE
+/nova-phpcs.novaextension/CHANGELOG.md
+/nova-phpcs.novaextension/README.md
+/nova-phpcs.novaextension/Scripts
+/node_modules
 .DS_Store

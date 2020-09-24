@@ -3,11 +3,11 @@
     "name": "phpcs",
     "organization": "Dinh Quoc Han",
     "description": "PHP CodeSniffer for Nova.",
-    "version": "1.2",
+    "version": "1.3.0",
     "repository": "https://github.com/dinhquochan/nova-phpcs",
 	"bugs": "https://github.com/dinhquochan/nova-phpcs/issues",
     "categories": ["issues"],
-    "main": "main.min.js",
+    "main": "main.dist.js",
     "activationEvents": [
         "onLanguage:php"
     ],

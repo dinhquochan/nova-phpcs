@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cp README.md nova-phpcs.novaextension
+cp CHANGELOG.md nova-phpcs.novaextension
+cp LICENSE nova-phpcs.novaextension
+npm install
+npm run build
