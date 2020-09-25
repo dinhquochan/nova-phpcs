@@ -27,7 +27,13 @@ class IssuesProvider {
             const process = new Process('/usr/bin/env', options)
 
             process.onStdout(line => {
-                let phpcsResult = JSON.parse(line)
+                let phpcsResult;
+
+                try {
+                    phpcsResult = JSON.parse(line);
+                } catch (e) {
+                    phpcsResult = false;
+                }
 
                 if (phpcsResult) {
                     for (let [path, cs] of Object.entries(phpcsResult.files)) {
