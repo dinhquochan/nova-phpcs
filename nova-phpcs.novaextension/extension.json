@@ -5,8 +5,10 @@
     "description": "PHP CodeSniffer for Nova.",
     "version": "1.3.0",
     "repository": "https://github.com/dinhquochan/nova-phpcs",
-	"bugs": "https://github.com/dinhquochan/nova-phpcs/issues",
-    "categories": ["issues"],
+    "bugs": "https://github.com/dinhquochan/nova-phpcs/issues",
+    "categories": [
+        "issues"
+    ],
     "main": "main.dist.js",
     "activationEvents": [
         "onLanguage:php"
@@ -17,11 +19,25 @@
     },
     "config": [
         {
-            "key": "dqh-phpcs.executable-path",
-            "title": "Executable path",
+            "key": "dqh-phpcs.cs-executable-path",
+            "title": "phpcs Path",
             "description": "This setting controls the executable path for the phpcs. You may specify the absolute path or workspace relative path to the phpcs executable.",
             "type": "string",
             "default": "phpcs"
+        },
+        {
+            "key": "dqh-phpcs.use-phpcbf",
+            "title": "Try to Auto Fix Issues",
+            "description": "This setting controls if phpcbf should try to fix found issues.",
+            "type": "boolean",
+            "default": true
+        },
+        {
+            "key": "dqh-phpcs.cbf-executable-path",
+            "title": "phpcbf Path",
+            "description": "This setting controls the executable path for the phpcbf. You may specify the absolute path or workspace relative path to the phpcbf executable.",
+            "type": "string",
+            "default": "phpcbf"
         },
         {
             "key": "dqh-phpcs.standard",
