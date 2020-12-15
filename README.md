@@ -1,3 +1,5 @@
+**NOTICE: This extension is archived. Move to [https://extensions.panic.com/extensions/com.thorlaksson/com.thorlaksson.phpcs/](https://extensions.panic.com/extensions/com.thorlaksson/com.thorlaksson.phpcs/)**
+
 # phpcs for Nova
 
 This issues extension for [Nova](https://panic.com/nova) provides an interface to [phpcs](http://pear.php.net/package/PHP_CodeSniffer/). It will be used with files that have the “PHP” language mode.
